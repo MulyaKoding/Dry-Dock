@@ -21,6 +21,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  nitro: {
+    routeRules: process.env.BACKEND_URL
+      ? { '/api/**': { proxy: `${process.env.BACKEND_URL}/api/**` } }
+      : {},
+  },
   runtimeConfig: {
     public: { apiBase: '' }, // dari NUXT_PUBLIC_API_BASE
   },
