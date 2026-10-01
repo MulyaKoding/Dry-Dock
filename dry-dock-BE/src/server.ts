@@ -13,12 +13,9 @@ async function start() {
     console.error('Gagal terhubung ke database:', err)
     process.exit(1)
   }
-  app.listen(port, () => console.log(`Server berjalan di http://localhost:${port}`))
+  app.listen(port, () => console.log(`Server berjalan di port ${port}`))
 }
 
-// Di Vercel tidak boleh listen/exit, cukup export app
-if (!process.env.VERCEL) {
-  start()
-}
+start()
 
 export default app

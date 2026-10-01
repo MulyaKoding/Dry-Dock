@@ -8,17 +8,8 @@ services:
     restart: unless-stopped
     ports:
       - "4000:4000"
-    environment:
-      PORT: 4000
-      CLIENT_URL: http://localhost:3000
-      # Connect to MySQL running directly on the Host machine
-      DB_HOST: host.docker.internal
-      DB_PORT: 3306
-      DB_USER: root
-      DB_PASSWORD: "@Permata2026"
-      DB_NAME: dry_dock
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+    env_file:
+      - ./dry-dock-BE/.env
 
   # Frontend Web App (Nuxt 3)
   frontend:
