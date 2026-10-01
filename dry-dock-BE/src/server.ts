@@ -16,4 +16,9 @@ async function start() {
   app.listen(port, () => console.log(`Server berjalan di http://localhost:${port}`))
 }
 
-start()
+// Di Vercel tidak boleh listen/exit, cukup export app
+if (!process.env.VERCEL) {
+  start()
+}
+
+export default app
