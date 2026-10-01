@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded rectangle -->
+  <rect width="512" height="512" rx="108" fill="url(#bg-grad)"/>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#38bdf8" stroke-width="6" opacity="0.3"/>
+  
+  <!-- Modern Anchor / Dry Dock Ship Icon -->
+  <g transform="translate(256, 256) scale(0.9) translate(-256, -256)" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Anchor Ring -->
+    <circle cx="256" cy="140" r="36" fill="url(#gold-grad)" stroke="#38bdf8" stroke-width="12"/>
+    <!-- Center Shaft -->
+    <line x1="256" y1="176" x2="256" y2="400"/>
+    <!-- Crossbar -->
+    <line x1="170" y1="216" x2="342" y2="216"/>
+    <circle cx="170" cy="216" r="10" fill="#38bdf8" stroke="none"/>
+    <circle cx="342" cy="216" r="10" fill="#38bdf8" stroke="none"/>
+    <!-- Flukes / Arms -->
+    <path d="M 120 310 C 120 400, 392 400, 392 310"/>
+    <!-- Left Fluke Arrow -->
+    <path d="M 98 330 L 120 300 L 142 330" fill="#38bdf8" stroke="#38bdf8" stroke-width="8"/>
+    <!-- Right Fluke Arrow -->
+    <path d="M 370 330 L 392 300 L 414 330" fill="#38bdf8" stroke="#38bdf8" stroke-width="8"/>
+    <!-- Wave Bottom Base -->
+    <path d="M 160 430 Q 208 410 256 430 T 352 430" stroke="#38bdf8" stroke-width="12"/>
+  </g>
+</svg>

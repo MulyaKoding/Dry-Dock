@@ -1,0 +1,44 @@
+{
+  "name": "Dry Dock Management System",
+  "short_name": "Dry Dock",
+  "description": "Comprehensive maritime dry dock, work order, and shipyard project management application.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#29a1ff",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "url": "/",
+      "description": "View summary analytics and pending quotes"
+    },
+    {
+      "name": "Work Orders",
+      "url": "/work-orders",
+      "description": "Manage work orders and sub-jobs"
+    },
+    {
+      "name": "Dry Docks",
+      "url": "/dry-docks",
+      "description": "Monitor active and upcoming dockings"
+    }
+  ]
+}
+
