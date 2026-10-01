@@ -7,7 +7,8 @@
       "entrypoint": "Dockerfile"
     },
     "frontend": {
-      "root": "dry-dock-FE"
+      "root": "dry-dock-FE",
+      "framework": "nuxtjs"
     }
   },
   "rewrites": [
