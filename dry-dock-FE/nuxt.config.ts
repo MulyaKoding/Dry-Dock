@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       ? { '/api/**': { proxy: `${process.env.BACKEND_URL}/api/**` } }
       : {},
   },
-  runtimeConfig: {
-    public: { apiBase: '' }, // dari NUXT_PUBLIC_API_BASE
-  },
+ runtimeConfig: {
+  public: { apiBase: '/api' }, // dari NUXT_PUBLIC_API_BASE
+},
 })
